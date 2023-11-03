@@ -1,13 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Card from '../components/Card.jsx';
 ---
 
 <Layout title="Welcome to Astro.">
-
-	<Card title='Dog' href='/images/a-dog.jpeg' body='body'>
-
-	</Card>
+	<div id="handler-block">
+		<Card client:load></Card>
+	</div>
 </Layout>
-
-
